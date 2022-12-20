@@ -1,0 +1,123 @@
+body{
+    /* background-color: violet;  */
+    background: linear-gradient( to right,#56d8e4, #9f01ea);
+}
+.contactRight{
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    width: 500px;
+    height: 580px;
+    padding: 10px 30px;
+    margin-left: 30%;
+    margin-top: 35px;
+    /* background: rgb(0, 0, 0); 
+     background: rgba(0, 0, 0, 0.5);  */
+     background-color:white;
+    
+}
+.contactRight>p{
+    margin-left: 20%;
+    font-size: 24px;
+    font-weight: bold;
+    /* color: red; */
+}
+.inputfield{
+    display: flex;
+    margin-top: -10px;
+    width: 250px;
+}
+.inputfield .labels{
+    line-height: 50px;
+    margin-top: 0px;
+    /* color: white; */
+}
+.box span{
+    visibility:hidden;
+    
+}
+
+.box.error input{
+    border: solid 1px red;
+}
+.box.error textarea{
+    border: solid 1px red;
+}
+.box.success input {
+    border: solid 1px green;
+}
+.box.success textarea{
+    border: solid 1px green;
+}
+.box.error span{
+    font-size: 14px;
+    margin-left: 200px;
+    visibility: visible;
+    color: red;
+}
+form input{
+    margin-top: 8px;
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid 1px black;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: white;
+    /* background: rgb(0, 0, 0); 
+     background: rgba(0, 0, 0, 0.1);  */
+}
+
+.form input:focus{
+    outline: none;
+  
+}
+form{
+    margin-left: 70px;
+    padding-top: -50px;
+    display: flex;
+    flex-direction: column;
+}
+/* form textarea {
+    margin-top:10px;
+    border-radius: 5px;
+    border: solid 1px black; 
+    width: 300px;
+    height: 80px;
+    background-color: #f1f0f0;
+    background-color: white;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background: rgb(0, 0, 0); 
+     background: rgba(0, 0, 0, 0.4); 
+}
+form textarea:focus{
+    outline: none;
+} */
+form button{
+    outline: none;
+    border: none;
+    color: white;
+    width: 125px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 14px;
+    margin-left: 100px;
+    /* background-color:red; */
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+.info h5{ 
+    color: white;
+    margin-top: 10px;
+    padding: 5px 0px 6px 5px;
+    font-weight: normal;
+    border-radius: 2px;
+    /* background-color: #56d8e4; */
+}
+.info.error h5{
+    background-color:#d83d4f;
+}
+.info.success h5{
+    background-color: green;
+}

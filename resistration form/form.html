@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+    <div class="contactRight">
+        <p>RESISTRATION FORM</p>
+        <div class="inputfield">
+            <div class="labels">
+                <p>Name</p> 
+                <p>Date of Birth</p>
+                <p>Email</p>
+                <p>Phone</p>
+                <p>Password</p>
+                <p>Confirmpassword</p>
+                <!-- <p>Message<span style="color:red;font-size: 20px;">*</span></p> -->
+            </div>
+            <form class="form">
+                <div class="box">
+                    <input type="text" id="name" onblur="nameHandler()">
+                    <span>Invalid name*</span>
+                </div>
+                <div class="box">
+                    <input type="date" id="dob" onblur="dobHandler()">
+                    <span>Invalid DOB*</span>
+                </div>
+                <div class="box">
+                    <input type="email" id="mail" onblur="mailHandler()">
+                    <span>Invalid mail id*</span>
+                </div>
+                <div class="box">
+                    <input type="number" id="phone" onblur="numHandler()">
+                    <span>Invalid number*</span>
+                </div>
+                <div class="box">
+                    <input type="password" id="subject" onblur="subHandler()">
+                    <span>Invalid password*</span>
+                </div>
+                <div class="box">
+                    <input type="password" id="confirmpd" onblur="passHandler()">
+                    <span>Wrong password*</span>
+                </div>
+                <!-- <div class="box">
+                    <textarea name="" id="textarea" cols="10" rows="5"
+                        onblur="textHandler()"></textarea>
+                    <span>Invalid Message*</span>
+                </div> -->
+                <button id="btn">Send Message</button>
+            </form>
+
+        </div>
+        <div class="info">
+            <h5>Please enter the required field</h5>
+        </div>
+    </div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
